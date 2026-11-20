@@ -168,9 +168,9 @@
 .main-kv .main-kv__slide:not(:first-child){display:none!important}
 </style>
 <script>if(self!==top)document.documentElement.classList.add('in-frame')</script><style id="mock-anim">[data-anim-obj],[data-motion]{opacity:1!important;transform:none!important;visibility:visible!important}
-#mock-nav{position:fixed;right:16px;bottom:16px;z-index:99999;display:flex;gap:6px;font:600 12px/1 -apple-system,sans-serif}
+#mock-nav{position:fixed;right:16px;bottom:16px;z-index:99999;display:flex;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 250px);gap:6px;font:600 12px/1 -apple-system,sans-serif}
 html.in-frame #mock-nav{display:none}
-#mock-nav a{background:#111;color:#fff;padding:9px 12px;border-radius:20px;text-decoration:none;opacity:.85}#mock-nav a.on{background:#FF4800}</style></head>
+#mock-nav a{white-space:nowrap;background:#111;color:#fff;padding:9px 12px;border-radius:20px;text-decoration:none;opacity:.85}#mock-nav a.on{background:#FF4800}</style></head>
 
       <body class="body--v2" style=""><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;background:#000;color:#fff;font:600 12px/1.3 -apple-system,sans-serif;padding:6px 10px;border-radius:4px;opacity:.85;pointer-events:none">디자인 시안 목업 · 실제 사이트 아님</div>
         
@@ -425,7 +425,7 @@ html.in-frame #mock-nav{display:none}
 												
 												
 													<li class="gnb-header__menu-item gnb-header__menu-item--has-submenu">
-														<a href="javascript:void(0);" data-mockup-blocked="1" class="gnb-header__menu-link" data-ga-category="gnb" data-ga-label="gnb_programs">
+														<a href="program-list.html" class="gnb-header__menu-link" data-ga-category="gnb" data-ga-label="gnb_programs">
 															<span class="gnb-header__menu-text">
 																Programs
 															</span>
@@ -438,7 +438,7 @@ html.in-frame #mock-nav{display:none}
 														<div class="gnb-header__submenu-content">
 															<ul class="gnb-header__submenu-list">
 																<li class="gnb-header__submenu-item">
-																	<a href="javascript:void(0);" data-mockup-blocked="1" class="gnb-header__submenu-link" data-ga-category="gnb" data-ga-label="gnb_programs_now">
+																	<a href="program-list.html" class="gnb-header__submenu-link" data-ga-category="gnb" data-ga-label="gnb_programs_now">
 																		<span class="gnb-header__submenu-text">
 																			현재 프로그램
 																		</span>
@@ -1192,7 +1192,7 @@ html.in-frame #mock-nav{display:none}
             
             <section class="whats-on" id="whatsOnSection">
               <div class="whats-on__background-wrapper">
-                <div class="whats-on__background bg1" style="background-image: url(&quot;https://www.centrepompidou-hanwha.kr/upload/exhibition/2026/10/01/1790838428327_05.jpg&quot;); opacity: 1;"></div>
+                <div class="whats-on__background bg1" style="background-image: url(&quot;banner_PG1_list.jpg&quot;); opacity: 1;"></div>
                 <div class="whats-on__background bg2"></div>
                 <div class="whats-on__background-gradient"></div>
               </div>
@@ -1218,7 +1218,7 @@ html.in-frame #mock-nav{display:none}
 
 
 
-<a class="cta-button" href="javascript:void(0);" data-mockup-blocked="1">
+<a class="cta-button" href="program-list.html">
   <span class="cta-button__indicator"></span>
   <span class="cta-button__indicator"></span>
   <span class="cta-button__label-back"></span>
@@ -1235,6 +1235,25 @@ html.in-frame #mock-nav{display:none}
                     <div class="col--7 col--t-8" data-anim-obj="" id="whatsOnCardsContainer" style="opacity: 0;">
                       
                       
+                        <a href="program-detail.html" class="whats-on-card">
+                          <div class="image-wrapper">
+    <img src="banner_PG1_list.jpg" alt="《레픽 아나돌, 기계 기억: 우주》 아티스트 토크" data-fallback="">
+                          </div>
+                          <div class="whats-on-card__info sp-py-9">
+                            <div class="meta__badges sp-mb-5 sp-gap-2">
+                                <span class="meta__badge meta__badge--fill body body--3">
+                                    일반
+                                </span>
+                                <span class="meta__badge body body--3">Artist Talk</span>
+                                <span class="meta__badge body body--3">레픽 아나돌</span>
+                                <span class="meta__badge body body--3">1층 오디토리엄</span>
+                            </div>
+                            <h3 class="title title--2 sp-mb-5">《레픽 아나돌, 기계 기억: 우주》 아티스트 토크</h3>
+                            <div class="meta sp-gap-2">
+                                <span class="body body--2 body--bold">2026.12.12 (토) 14:00–15:30</span>
+                            </div>
+                          </div>
+                        </a>
                         <a href="javascript:void(0);" data-mockup-blocked="1" class="whats-on-card">
                           <div class="image-wrapper">
                             
@@ -2178,7 +2197,7 @@ html.in-frame #mock-nav{display:none}
       
 
       
-<div id="mock-nav"><a href="index.html" class=on>메인</a><a href="exhibition-list.html">전시 목록</a><a href="exhibition-detail.html">전시 상세</a><a href="did.html">DID</a><a href="mobile-main.html">모바일 메인</a><a href="mobile-list.html">모바일 목록</a><a href="mobile-detail.html">모바일 상세</a><a href="mobile.html">모바일 전체</a></div><script data-mockup-guard>(function(){var ok=["did.html", "exhibition-detail.html", "exhibition-list.html", "index.html", "mobile-detail.html", "mobile-list.html", "mobile-main.html", "mobile.html"];function allowed(h){if(!h)return true;h=h.trim();if(h.indexOf('javascript:')===0||h.charAt(0)==='#')return true;var f=h.split('#')[0].split('?')[0];return ok.indexOf(f)>=0;}
+<div id="mock-nav"><a href="index.html" class=on>메인</a><a href="exhibition-list.html">전시 목록</a><a href="exhibition-detail.html">전시 상세</a><a href="program-list.html">프로그램 목록</a><a href="program-detail.html">프로그램 상세</a><a href="did.html">DID</a><a href="mobile-main.html">모바일 메인</a><a href="mobile-list.html">모바일 목록</a><a href="mobile-detail.html">모바일 상세</a><a href="mobile-program-list.html">모바일 프로그램 목록</a><a href="mobile-program-detail.html">모바일 프로그램 상세</a><a href="mobile.html">모바일 전체</a></div><script data-mockup-guard>(function(){var ok=["did.html", "exhibition-detail.html", "exhibition-list.html", "index.html", "mobile-detail.html", "mobile-list.html", "mobile-main.html", "mobile-program-detail.html", "mobile-program-list.html", "mobile.html", "program-detail.html", "program-list.html"];function allowed(h){if(!h)return true;h=h.trim();if(h.indexOf('javascript:')===0||h.charAt(0)==='#')return true;var f=h.split('#')[0].split('?')[0];return ok.indexOf(f)>=0;}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(a&&!allowed(a.getAttribute('href'))){e.preventDefault();e.stopImmediatePropagation();}},true);
 document.addEventListener('submit',function(e){e.preventDefault();e.stopImmediatePropagation();},true);
 window.open=function(){return null;};})();</script></body></html>
